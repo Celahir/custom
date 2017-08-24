@@ -37,6 +37,20 @@
             }
           }
         };
+        
+        // Example code for a bot command:
+        bot.commands.furryCommand = {
+          command: 'furry',  // The command to be called. With the standard command literal this would be: !bacon
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me OwO What's this?");
+            }
+          }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
@@ -48,8 +62,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "FurrBot 6001",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/Celahir/source/master/lang/en.json",
+      scriptLink: "https://rawgit.com/Celahir/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -105,13 +119,13 @@
       songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/Celahir/custom/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/Celahir/custom/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Celahir/source/master/basicBot.js", extend);
 
 }).call(this);
