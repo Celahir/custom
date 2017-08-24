@@ -128,8 +128,8 @@
       fbLink: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
       youtubeLink: null,
       website: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
-      intervalMessages: [5],
-      messageInterval: 5,
+      intervalMessages: ["Yarf! Still here! Woof!"],
+      messageInterval: 1,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
