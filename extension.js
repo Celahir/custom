@@ -129,7 +129,7 @@
       youtubeLink: null,
       website: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
       intervalMessages: ["Yarf! Still here! Woof!"],
-      messageInterval: 1,
+      messageInterval: 25,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
