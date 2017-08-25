@@ -66,6 +66,7 @@
           }
         };
         
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -135,9 +136,30 @@
       blacklists: {
         NSFW: "https://rawgit.com/Celahir/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/Celahir/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json"
+        BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json",
+        troll: "https://rawgit.com/Celahir/custom/master/blacklists/troll.json"
       }
     }));
+    
+            // For the time now
+        Date.prototype.timeNow = function () {
+          return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
+      }
+    
+            // Time exp.:
+        bot.commands.timeCommand = {
+          command: 'time',  
+          rank: 'user', 
+          type: 'exact', 
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+                API.sendChat(Date.prototype.timeNow, {
+                
+            }
+          }
+        };
 
     // Start the bot and extend it when it has loaded.
     $.getScript("https://rawgit.com/Celahir/source/master/basicBot.js", extend);
