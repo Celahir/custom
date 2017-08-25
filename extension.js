@@ -137,7 +137,7 @@
         NSFW: "https://rawgit.com/Celahir/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/Celahir/custom/master/blacklists/OPlist.json",
         BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json",
-        troll: "https://rawgit.com/Celahir/custom/master/blacklists/troll.json"
+        TROLL: "https://rawgit.com/Celahir/custom/master/blacklists/troll.json"
       }
     }));
     
