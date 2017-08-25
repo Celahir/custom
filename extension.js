@@ -16,10 +16,10 @@
         // Load custom settings set below
         bot.retrieveSettings();
 
-        //Extend the bot here, either by calling another function or here directly.
+        //Blahblahblag... I am gonna yiff here!
 
-        // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        // You can add more spam words to the bot. Just in case... 
+        var spamWords = ['fuck', 'meh', 'idiot', 'škrr'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -38,11 +38,11 @@
           }
         };
         
-        // Example code for a bot command:
+        // Furry OwO command
         bot.commands.furryCommand = {
-          command: 'furry',  // The command to be called. With the standard command literal this would be: !bacon
-          rank: 'user', // Minimum user permission to use the command
-          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          command: 'furry',  
+          rank: 'user', 
+          type: 'exact', 
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
@@ -52,7 +52,7 @@
           }
         };
 
-        // Example code for a bot command:
+        // Yi*f command
         bot.commands.yiffCommand = {
           command: 'yiff',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
@@ -62,6 +62,20 @@
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("/me Yeah daddy! Come closer! :3");
+            }
+          }
+        };
+        
+        // Time
+        bot.commands.timeCommand = {
+          command: 'time',  
+          rank: 'user', 
+          type: 'exact', 
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me Who cares about time? Just enjoy this moment of life and stop disturbing me when doing furry yoga!");
             }
           }
         };
@@ -135,7 +149,8 @@
       blacklists: {
         NSFW: "https://rawgit.com/Celahir/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/Celahir/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json"
+        BANNED: "https://rawgit.com/Celahir/custom/master/blacklists/BANNEDlist.json",
+        TROLL: "https://rawgit.com/Celahir/custom/master/blacklists/troll.json"
       }
     }));
 
