@@ -1,0 +1,13 @@
+{
+    "1":{
+        "mid": "1:TROLLsongID1"
+    },
+    "2":{
+        "title": "This is a TROLL song",
+        "author": "The TROLL band",
+        "mid": "1:TROLLsongID2"
+    },
+    "3":{
+        "mid": "1:TROLLsongID3"
+    }
+}
