@@ -205,8 +205,8 @@
     "website": "\/me Please visit our website: %%LINK%%",
     "youtube": "\/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
-    "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
+    "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer! Join the waitlist first (or leave the booth)...",
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
-    "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
-    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
+    "thorWorthy": "\/me Lucky baztard... @%%NAME%% you're worthy of the hammer :hammer:, congratulations, furfag!",
+    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer, but you can try again in 40 minutes."
 }
