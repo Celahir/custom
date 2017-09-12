@@ -79,6 +79,19 @@
             }
           }
         };
+        // Hello
+        bot.commands.helloCommand = {
+          command: 'gif hello',  
+          rank: 'bouncer', 
+          type: 'exact', 
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("/me Master? Good to see you again!");
+            }
+          }
+        };
         
         // Load the chat package again to account for any changes
         bot.loadChat();
@@ -102,7 +115,7 @@
       cmdDeletion: false,
       maximumAfk: 120,
       afkRemoval: false,
-      maximumDc: 600,
+      maximumDc: 240000,
       bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
@@ -131,19 +144,19 @@
       afkpositionCheck: 2,
       afkRankCheck: "ambassador",
       motdEnabled: true,
-      motdInterval: 8,
-      motd: "Sorry, i am in slow mode - servers are busy...",
+      motdInterval: 9,
+      motd: "Imma hungy. Feed me!",
       filterChat: false,
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
+      rulesLink: "https://i.imgur.com/gvNGSb4.jpg",
       themeLink: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
       fbLink: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
       youtubeLink: null,
       website: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
-      intervalMessages: ["Yarf! Still here! Woof!"],
-      messageInterval: 25,
+      intervalMessages: ["Woof!"],
+      messageInterval: 35,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
