@@ -81,7 +81,7 @@
         };
         // Hello
         bot.commands.helloCommand = {
-          command: 'gif hello',  
+          command: 'gif, hello',  
           rank: 'bouncer', 
           type: 'exact', 
           functionality: function (chat, cmd) {
