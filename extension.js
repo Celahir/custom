@@ -61,7 +61,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Yeah daddy! Come closer! :3");
+              API.sendChat("/me Are you sure? Here? In a public? :3");
             }
           }
         };
@@ -101,7 +101,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "FurrBot 6001",
+      botName: "JerkBot 6001",
       language: "english",
       chatLink: "https://rawgit.com/Celahir/custom/master/lang/en.json",
       scriptLink: "https://rawgit.com/Celahir/source/master/basicBot.js",
@@ -144,8 +144,8 @@
       afkpositionCheck: 2,
       afkRankCheck: "ambassador",
       motdEnabled: true,
-      motdInterval: 9,
-      motd: "Imma hungy. Feed me!",
+      motdInterval: 10,
+      motd: "!motd !motd !motd... Oh wait! I am not going to cycle again!",
       filterChat: false,
       etaRestriction: false,
       welcome: true,
@@ -156,7 +156,7 @@
       youtubeLink: null,
       website: "http://www.crossfitpacepatriotpride.com/wp-content/uploads/2016/06/Under-Construction1.jpg",
       intervalMessages: ["Woof!"],
-      messageInterval: 35,
+      messageInterval: 18,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
