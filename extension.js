@@ -145,7 +145,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: true,
       motdInterval: 10,
-      motd: "!motd !motd !motd... Oh wait! I am not going to cycle again!",
+      motd: "https://i.pinimg.com/originals/c5/dc/e9/c5dce9704ca80facf480ae8cb99dbd5c.jpg",
       filterChat: false,
       etaRestriction: false,
       welcome: true,
